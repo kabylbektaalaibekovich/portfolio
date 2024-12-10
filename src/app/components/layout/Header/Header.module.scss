@@ -1,0 +1,191 @@
+.Header{
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    z-index:99;
+    transition: transform 0.3s ease-in-out;
+    .content{
+      position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+   .left{
+    .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+      .logoImg{
+        width: 50px;
+        height: 50px;
+      
+      }
+
+    }
+
+   }
+       .right{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        .nav{
+           ul{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+            li{
+           .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: white;
+            transition: 0.2s;
+            &.active{
+              color:rgb(244, 66, 1);
+            }
+           }
+            }
+           }
+        }
+        .resume{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 115px;
+        height: 40px;
+        border: 0.5px solid #ffffff56;
+        padding: 0px 10px;
+        border-radius: 5px;
+
+         
+    .resumeBtn{
+      font-size: 20px;
+    
+   
+    }
+        }
+       }
+    }
+}
+
+.header.hidden {
+  transform: translateY(-100%); /* Скрывает хедер */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.language {
+  position: relative;
+}
+
+.languageBtn {
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.languageDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -20px;
+  background:transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  list-style-type: none;
+  border: 1px solid  #7b53f5;
+}
+
+.languageDropdown li {
+  font-family: sans-serif;
+  padding: 0.5rem 0;
+}
+
+.languageDropdown li button {
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.languageDropdown li button:hover {
+  color: red;
+  
+}
+
+.language:hover .languageDropdown {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+// .language {
+//   position: relative;
+// }
+
+// .languageBtn {
+//   background: transparent;
+//   color: #fff;
+//   font-size: 1rem;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .languageDropdown {
+//   display: none;
+//   position: absolute;
+//   top: 30px;
+//   left: -20px;
+//   background:transparent;
+//   border: 1px solid rgba(128, 0, 128, 0.436);
+//   padding: 0.5rem 1rem;
+//   border-radius: 5px;
+//   list-style-type: none;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+// }
+
+// .languageDropdown li {
+//   font-family: sans-serif;
+//   padding: 0.5rem 0;
+// }
+

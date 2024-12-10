@@ -1,0 +1,53 @@
+.BurgerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .content {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    width: 35px;
+    height: 5px;
+    background-color:#fff;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .line1 {
+    top: 8px;
+  }
+  
+  .line2 {
+    top: 15px;
+  }
+  
+  .line3 {
+    top: 22px;
+  }
+  
+  .BurgerButton.open .line1 {
+    transform: rotate(45deg);
+    top: 15px;
+  }
+  
+  .BurgerButton.open .line2 {
+    opacity: 0;
+  }
+  
+  .BurgerButton.open .line3 {
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+  

@@ -1,0 +1,168 @@
+.Contacts {
+  height: 100vh;
+  padding: 4rem 0;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.content {
+  gap: 2rem;
+}
+
+.contactForm {
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.contactTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0561cb;
+}
+
+.contactDescreption {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.pin {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input,
+.textarea {
+  width: 600px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #7597de;
+  box-shadow: 0 0 5px rgba(117, 151, 222, 0.5);
+}
+
+.button {
+  width: 200px;
+  background: #001133;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #7597de;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 1000;
+  text-align: center;
+}
+
+.modalText {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  background: #f567ef;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.closeButton:hover {
+  background: #ff85ef;
+}
+
+
+@media (max-width: 1020px) {
+  .input,
+  .textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contactTitle {
+    font-size: 2rem;
+  }
+
+  .contactDescreption {
+    font-size: 1rem;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+

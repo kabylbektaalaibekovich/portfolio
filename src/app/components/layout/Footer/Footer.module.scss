@@ -1,0 +1,45 @@
+.Footer{
+    background: #0561cb;
+    
+    padding: 30px 0px;;
+}
+
+
+
+
+.footerCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__card{
+        display: flex;
+        gap: 10px;
+        .linkIcon{
+            font-size: 25px;
+            color:aliceblue;
+        }
+    }
+}
+
+
+
+@media(max-width:767px){
+    .footerCard{
+flex-direction: column-reverse; 
+gap: 10px;   
+        .footer__card{
+            .card___title{
+                font-size: 17px;
+            }
+           
+        }
+    }
+}
+
+@media(max-width:320px){
+
+    .Footer{
+display: none;
+    }
+}
